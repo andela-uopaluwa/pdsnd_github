@@ -11,5 +11,9 @@ bikeshare.py: contains the python script.
 chicago.csv, new_york_city.csv, washington.csv are the data files to be used with this project.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+The following resources were really helpful
+- https://pandas.pydata.org/pandas-docs/version/0.21/api.html
+- https://pandas.pydata.org/pandas-docs/version/0.21/tutorials.html
+- https://www.geeksforgeeks.org/
+- https://chrisalbon.com/
 
