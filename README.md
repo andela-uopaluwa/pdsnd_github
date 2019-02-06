@@ -16,4 +16,5 @@ The following resources were really helpful
 - https://pandas.pydata.org/pandas-docs/version/0.21/tutorials.html
 - https://www.geeksforgeeks.org/
 - https://chrisalbon.com/
+- https://docs.scipy.org/doc/numpy/user/quickstart.html
 
