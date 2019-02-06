@@ -38,6 +38,7 @@ def get_filters():
     return city, month, day
 
 def validate_input_filters(user_input, valid_data_set):
+    """Validates input from user."""
     if user_input in valid_data_set:
         return True
     else:
