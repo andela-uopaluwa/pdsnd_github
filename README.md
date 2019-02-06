@@ -4,7 +4,7 @@
 ### Bikeshare Data Statistics
 
 ### Description
-Describe what your project is about and what it does
+This project contains a python script for calculating a range of statistics on US bikeshare data fed in through csv data files. This project makes use of NumPy and Pandas.
 
 ### Files used
 Include the files used
