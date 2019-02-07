@@ -43,6 +43,9 @@ def validate_input_filters(user_input, valid_data_set):
     else:
         print("Invalid Input! Try Again")
 
+def format_input_string(input_string):
+    return input_string.strip().lower()
+
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
