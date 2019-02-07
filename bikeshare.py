@@ -19,19 +19,19 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city_is_valid = False
     while not(city_is_valid):
-        city = input('Enter city name of choice from "Chicago, New York City, Washington": ').strip().lower()
+        city = format_input_string(input('Enter city name of choice from "Chicago, New York City, Washington": '))
         city_is_valid = validate_input_filters(city, ['chicago', 'new york city', 'washington'])
 
     # get user input for month (all, january, february, ... , june)
     month_is_valid = False
     while not(month_is_valid):
-        month = input('Enter month of choice from "january, february, march, april, may, june" or "all": ').strip().lower()
+        month = format_input_string(input('Enter month of choice from "january, february, march, april, may, june" or "all": '))
         month_is_valid = validate_input_filters(month, ['january', 'february', 'march', 'april', 'may', 'june', 'all'])
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     day_is_valid = False
     while not(day_is_valid):
-        day = input('Enter the day of week of choice from "monday, tuesday, wednesday, thursday, friday, saturday, sunday" or "all": ').strip().lower()
+        day = format_input_string(input('Enter the day of week of choice from "monday, tuesday, wednesday, thursday, friday, saturday, sunday" or "all": '))
         day_is_valid = validate_input_filters(day, ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all'])
 
     print('-'*40)
@@ -164,12 +164,12 @@ def user_stats(df, city):
 def print_dataset(df):
     """Displays loaded data based on user response."""
     start, end = 0, 0
-    display_data = input("Type 'yes' if you would like to see 5 rows of the dataset or 'no' to continue: ").strip().lower()
+    display_data = format_input_string(input("Type 'yes' if you would like to see 5 rows of the dataset or 'no' to continue: "))
     while display_data == 'yes':
         end += 5
         print(df[start:end])
         start = end
-        display_data = input("Type 'yes' if you would like to see 5 more rows of the dataset or 'no' to continue: ").strip().lower()
+        display_data = format_input_string(input("Type 'yes' if you would like to see 5 more rows of the dataset or 'no' to continue: "))
 
 def main():
     while True:
@@ -181,8 +181,8 @@ def main():
         trip_duration_stats(df)
         user_stats(df, city)
         print_dataset(df)
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        restart = format_input_string(input('\nWould you like to restart? Enter yes or no.\n'))
+        if restart != 'yes':
             break
 
 
