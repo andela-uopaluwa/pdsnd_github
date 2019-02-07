@@ -44,6 +44,14 @@ def validate_input_filters(user_input, valid_data_set):
         print("Invalid Input! Try Again")
 
 def format_input_string(input_string):
+    """
+    Format user input
+
+    Args:
+        (str) input_string - user response to input prompt or any string
+    Returns:
+        (str) copy of input_string - lowercase copy of input_string stripped of any preceeding and following whitespace
+    """
     return input_string.strip().lower()
 
 def load_data(city, month, day):
